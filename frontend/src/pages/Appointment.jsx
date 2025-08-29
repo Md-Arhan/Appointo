@@ -111,7 +111,7 @@ export default function Appointment() {
   const bookAppointment = async () => {
     if (!token) {
       toast.warning("Login to book appointment");
-      return navigate("/login");
+      return navigate("/appointo/login");
     }
 
     const date = docSlots[slotIndex][0].datetime;
